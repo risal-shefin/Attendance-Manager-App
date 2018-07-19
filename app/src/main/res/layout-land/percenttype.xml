@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageView6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/back2" />
+    <Spinner android:id="@id/yearsel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:dropDownWidth="50.0dip" app:layout_constraintLeft_toLeftOf="@id/semsel" app:layout_constraintRight_toRightOf="@id/semsel" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/section2" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginTop="23.0dip" android:layout_marginBottom="25.0dip" android:text="Section" app:layout_constraintBottom_toTopOf="@id/type2" app:layout_constraintLeft_toLeftOf="@id/type2" app:layout_constraintRight_toRightOf="@id/type2" app:layout_constraintTop_toBottomOf="@id/textView" />
+    <Spinner android:id="@id/secsel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29.0dip" android:dropDownWidth="50.0dip" app:layout_constraintLeft_toLeftOf="@id/typesel2" app:layout_constraintRight_toRightOf="@id/typesel2" app:layout_constraintTop_toBottomOf="@id/semsel" />
+    <android.support.constraint.Guideline android:orientation="vertical" android:id="@id/guideline4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="311.0dip" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/type2" android:layout_width="72.0dip" android:layout_height="33.0dip" android:layout_marginBottom="32.0dip" android:text="Type" android:layout_marginEnd="33.0dip" app:layout_constraintBottom_toTopOf="@id/savetype2" app:layout_constraintRight_toLeftOf="@id/savetype2" />
+    <Spinner android:id="@id/typesel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:layout_marginStart="50.0dip" app:layout_constraintLeft_toRightOf="@id/savetype2" app:layout_constraintTop_toBottomOf="@id/secsel2" />
+
+    <Button
+        android:id="@id/savetype2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16.0dip"
+        android:text="OKAY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/year2" android:layout_width="0.0dip" android:layout_height="29.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="24.0dip" android:text="Year" android:layout_marginEnd="4.0dip" app:layout_constraintBottom_toTopOf="@id/textView" app:layout_constraintLeft_toLeftOf="@id/textView" app:layout_constraintRight_toRightOf="@id/section2" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/textView" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginTop="69.0dip" android:text="Sem" app:layout_constraintLeft_toLeftOf="@id/section2" app:layout_constraintRight_toRightOf="@id/section2" app:layout_constraintTop_toTopOf="parent" />
+    <Spinner android:id="@id/semsel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29.0dip" android:dropDownWidth="50.0dip" app:layout_constraintLeft_toLeftOf="@id/secsel2" app:layout_constraintRight_toRightOf="@id/secsel2" app:layout_constraintTop_toBottomOf="@id/yearsel2" />
+</android.support.constraint.ConstraintLayout>

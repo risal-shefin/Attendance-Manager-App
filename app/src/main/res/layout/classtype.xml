@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@id/imageView10"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back2" />
+
+    <TextView
+        android:id="@id/year"
+        android:layout_width="64.0dip"
+        android:layout_height="29.0dip"
+        android:layout_marginStart="77.0dip"
+        android:layout_marginTop="146.0dip"
+        android:text="Year"
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@id/yearsel"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:dropDownWidth="50.0dip"
+        app:layout_constraintLeft_toLeftOf="@id/typesel"
+        app:layout_constraintRight_toRightOf="@id/typesel"
+        app:layout_constraintTop_toTopOf="@id/year" />
+
+    <TextView
+        android:id="@id/sectiion"
+        android:layout_width="0.0dip"
+        android:layout_height="35.0dip"
+        android:layout_marginBottom="70.0dip"
+        android:layout_marginTop="71.0dip"
+        android:text="Section"
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/savetype"
+        app:layout_constraintLeft_toLeftOf="@id/type"
+        app:layout_constraintTop_toTopOf="@id/typesel" />
+
+    <Spinner
+        android:id="@id/secsel"
+        android:layout_width="100.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="51.0dip"
+        android:layout_marginStart="51.0dip"
+        android:layout_marginTop="-8.0dip"
+        android:dropDownWidth="50.0dip"
+        app:layout_constraintLeft_toRightOf="@id/sectiion"
+        app:layout_constraintTop_toTopOf="@id/sectiion" />
+
+    <android.support.constraint.Guideline
+        android:id="@id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="192.0dip" />
+
+    <TextView
+        android:id="@id/type"
+        android:layout_width="72.0dip"
+        android:layout_height="33.0dip"
+        android:layout_marginBottom="73.0dip"
+        android:layout_marginTop="72.0dip"
+        android:text="Sem"
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/sectiion"
+        app:layout_constraintLeft_toLeftOf="@id/year"
+        app:layout_constraintTop_toTopOf="@id/year" />
+
+    <Spinner
+        android:id="@id/typesel"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-6.0dip"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/secsel"
+        app:layout_constraintRight_toRightOf="@id/secsel"
+        app:layout_constraintTop_toTopOf="@id/type" />
+
+    <Button
+        android:id="@id/savetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="69.0dip"
+        android:text="OKAY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toLeftOf="@id/guideline3" />
+</android.support.constraint.ConstraintLayout>

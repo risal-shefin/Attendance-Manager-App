@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Attendance Manager</string>
+    <string name="title_activity_navbar">NavbarActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tmp">tmp</string>
+    <string name="title_activity_nav_classtype">navClasstype</string>
+    <string name="title_activity_navpercenttype">navpercenttype</string>
+    <string name="title_activity_navtime">navtime</string>
+    <string name="title_activity_navtimelab">navtimelab</string>
+    <string name="title_activity_navtypeselect">navtypeselect</string>
+</resources>

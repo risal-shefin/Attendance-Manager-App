@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@id/imageView3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back2" />
+
+    <TextView
+        android:id="@id/year2"
+        android:layout_width="0.0dip"
+        android:layout_height="27.0dip"
+        android:layout_marginBottom="76dp"
+        android:text="Year"
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/textView"
+        app:layout_constraintLeft_toLeftOf="@id/textView"
+        app:layout_constraintRight_toRightOf="@id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@id/yearsel2"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70.0dip"
+        android:layout_marginTop="75.0dip"
+        android:dropDownWidth="50.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/semsel"
+        app:layout_constraintLeft_toLeftOf="@id/semsel"
+        app:layout_constraintRight_toRightOf="@id/semsel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@id/section2"
+        android:layout_width="0.0dip"
+        android:layout_height="33.0dip"
+        android:layout_marginBottom="51.0dip"
+        android:text="Section"
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/type2"
+        app:layout_constraintLeft_toLeftOf="@id/type2"
+        app:layout_constraintRight_toRightOf="@id/type2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.961" />
+
+    <Spinner
+        android:id="@id/secsel2"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50.0dip"
+        android:dropDownWidth="50.0dip"
+        app:layout_constraintLeft_toLeftOf="@id/typesel2"
+        app:layout_constraintRight_toRightOf="@id/typesel2"
+        app:layout_constraintTop_toBottomOf="@id/semsel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.constraint.Guideline
+        android:id="@id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="192.0dip" />
+
+    <TextView
+        android:id="@id/type2"
+        android:layout_width="73dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="58.0dip"
+        android:layout_marginEnd="42.0dip"
+        android:layout_marginTop="60.0dip"
+        android:text="Type"
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/savetype2"
+        app:layout_constraintRight_toLeftOf="@id/typesel2"
+        app:layout_constraintTop_toBottomOf="@id/secsel2"
+        android:layout_marginRight="42dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@id/typesel2"
+        android:layout_width="150.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16.0dip"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/type2"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@id/savetype2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="69.0dip"
+        android:text="OKAY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline4"
+        app:layout_constraintRight_toLeftOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@id/textView"
+        android:layout_width="48.0dip"
+        android:layout_height="30.0dip"
+        android:layout_marginBottom="44.0dip"
+        android:layout_marginTop="46.0dip"
+        android:text="Sem"
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/section2"
+        app:layout_constraintLeft_toLeftOf="@id/section2"
+        app:layout_constraintTop_toBottomOf="@id/yearsel2" />
+
+    <Spinner
+        android:id="@id/semsel"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp"
+        app:layout_constraintLeft_toLeftOf="@id/secsel2"
+        app:layout_constraintRight_toRightOf="@id/secsel2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

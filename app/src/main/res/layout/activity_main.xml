@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="98.0dip"
+        android:layout_height="54.0dip"
+        android:layout_marginLeft="63dp"
+        android:layout_marginStart="65.0dip"
+        android:layout_marginTop="117dp"
+        android:text="A DAY"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="94.0dip"
+        android:layout_height="56.0dip"
+        android:layout_marginEnd="59.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="59.0dip"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginTop="133dp"
+        android:text="B DAY"
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintLeft_toRightOf="@+id/button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="96.0dip"
+        android:layout_height="56.0dip"
+        android:layout_marginTop="80.0dip"
+        android:text="C DAY"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button4"
+        app:layout_constraintLeft_toLeftOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="88.0dip"
+        android:layout_height="52.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginTop="69.0dip"
+        android:text="D DAY"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/button3"
+        app:layout_constraintRight_toRightOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="95.0dip"
+        android:layout_height="54.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginEnd="8.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginTop="61.0dip"
+        android:text="E DAY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/percentage"
+        android:layout_width="228.0dip"
+        android:layout_height="48.0dip"
+        android:layout_marginEnd="8.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginTop="8.0dip"
+        android:text="Percentage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/back42" />
+
+
+</android.support.constraint.ConstraintLayout>
